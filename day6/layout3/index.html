@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>layout 3</title>
+		<link rel="stylesheet" href="assets/stylesheets/style.css">
+	</head>
+	<body>
+		<main>
+			<h1>Side By Side Positioning demo</h1>
+			<section class="main">
+				<!-- 1st section -->
+				<section>
+					<div class="box red">
+						<p>
+							These two dics are positioned next to one another using <mark>display: inline-block</mark>
+						</p>
+					</div>
+					<div class="box red">
+						<p>
+							Notice the space between them.It occurs because of my carriage in the HTML whicj I've used to keep the code organised. I've used a reset to insure no elements should have any default margins or padding.(I did add a bottom margin to make it easier to read.) This space is actually a spacce character rendered just as it would be between two inline elements.
+						</p>
+					</div>
+				</section>
+				<!-- 2nd section -->
+				<section>
+					<div class="box green left">
+						<p>
+							These two positioned using <mark>float: left</mark>.
+						</p>
+					</div>
+					<div class="box green left">
+						<p>
+							you can see that, even though the elements are spaced in the code, the space is not actually rendered on the same page. This may not be a huge deal in these first examples, but.. 
+						</p>
+					</div>
+				</section>
+				<!-- 3rd section -->
+				<section >
+					<div class="clear"></div>
+					<div class="box2 red">
+						<p>
+						 What if I want my sdie-by-side elements to take up the full width of the parent element? I can set the width of each to 50% , right?
+						</p>
+					</div>
+					<div class="box2 red">
+						<p>
+							Wrong! Because, together, the two inline block elements will addd up to 100% of the available width, but that doesn't account for the space between.
+						</p>
+					</div>
+				</section>
+				<!-- 4th section -->
+				<section>
+					<div class="box2 green left">
+						<p>
+							If i do the same thing with floated elements... </mark>.
+						</p>
+					</div>
+					<div class="box2 green left">
+						<p>
+							The two elements are Side-By-Side just as I intended and fill the entire width of the viewport.
+						</p>
+					</div>
+				</section>
+			</section>
+		</main>
+	</body>
+</html>
