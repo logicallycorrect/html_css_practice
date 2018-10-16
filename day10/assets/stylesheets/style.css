@@ -1,0 +1,148 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Main CSS */
+body {
+	font-family: 'Roboto Mono';
+}
+header {
+	background-color: #F96115;
+	color: #fff;
+	height: 50px;
+	line-height: 40px;
+	position: fixed;
+	display: block;
+	width: 100%;
+	top: 0px;
+}
+nav {
+	text-align: left;
+	width: 75%;
+	margin: 0 auto;
+}
+nav ul li {
+	display: inline;
+	font-size: 20px;
+	margin-right:  40px;
+	text-transform: capitalize;
+}
+.container {
+	background-color: #D4CEA7;
+	margin-top: 50px;
+}
+.wrapper {
+	margin:0 auto;
+	padding:30px 0 30px 0;
+	width:  75%;
+	display: block;
+}
+.box {
+	display: inline-block;
+	height: 350px;
+	width: 28%;
+	background-color: #005979;
+	margin-right: 2%; 
+	box-shadow: 10px 10px 8px #0000008c;
+	vertical-align: top;
+	padding:30px 0 0 15px;	
+}
+.margin-left {
+	margin-left: 40px;
+}
+.box ol {
+	font-size: 20px;
+	color:#D4CEA7;
+	margin-top: 8px;
+	text-transform: capitalize;
+	line-height: 1.2em;
+}
+.box ul {
+	font-size: 20px;
+	color:#D4CEA7;
+	text-transform: capitalize;
+	line-height: 1.2em;
+}
+.box3 li {
+	list-style: none;
+	padding-left: 1.5em;
+	line-height: 1.2em;
+	font-size: 20px;
+	color:#D4CEA7;
+	margin-top: 5px;
+	text-transform: capitalize;
+	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/tick_2.png") no-repeat 0 50%;
+	/*list-style-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/tick_2.png");*/
+}
+dt {
+	font-size: 40px;
+	margin-top: 20px;
+}
+dl {
+	font-size: 20px;
+	margin-top: 5px;
+}
+.level1 {
+	padding-left: 30px;
+}
+.level2 {
+	padding-left: 30px;
+}
+footer {
+	color: #fff;
+	height: 50px;
+	line-height: 40px;
+	background-color: #252C22;
+}
+.footer-section {
+	text-align: left;
+	width: 75%;
+	margin: 0 auto;
+}
+.footer-list li {
+	display: inline;
+	font-size: 20px;
+	margin-right:  40px;
+	text-transform: capitalize;
+}
+
+
