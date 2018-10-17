@@ -1,0 +1,206 @@
+/* CSS Reset */
+
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Main CSS */
+
+body {
+	background-color: #2D5338;
+	font-family: "Rubik";
+}
+main {
+width: 80%;
+margin: 0 auto;
+background-color: #BAFFCD;
+}
+nav {
+	text-align: center;
+}
+nav li {
+	display: inline-block;
+	font-size: 25px;
+	padding:15px;
+}
+header {
+	background: url(../media/bg.jpg) 0 0 no-repeat;
+	height: 30em;
+	background-size:100% 100%;
+ 	position: relative;
+	margin-bottom: 10px;
+}
+.relative {
+	position: relative;
+	height: 16em;
+}
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+}
+h1 {
+	font-size: 50px;
+	color: #000;
+	font-family: "Lobster";
+}
+.section1 {
+	display: block;
+	background-color: #DADADA;
+	padding:40px 0;
+ }
+ .line{
+ 	width: 100%;
+ }
+.col-3 {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 33.33%;
+	padding: 10px;
+	vertical-align: center;
+}
+img{
+	width: 100%;
+}
+p {
+	text-align: center;
+	padding-top: 20px;
+}
+audio {
+	width: 100%;
+}
+video {
+	width: 100%;
+}
+.section2 {
+	display: block;
+	background-color: #00BF0E;
+	text-align: center;
+	padding: 40px;
+}
+h2 {
+	font-family: "Lobster";
+	font-size: 50px;
+	color: #fff;
+	padding: 10px 0 20px 0;
+}
+iframe {
+	margin-top: 40px;
+	height: 400px;
+	width: 80%;
+	border: 20px solid #fff;
+}
+.map {
+	border: none;
+}
+.section3 {
+	width: 70%;
+	box-shadow: 0 0 15px 3px #888;
+	margin: 80px auto;
+	background-color: #fff;
+}
+footer {
+	background-color: #000
+}
+h3 {
+	text-align: center;
+	font-size: 30px;
+	padding: 30px;
+}
+form {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+.form-2 {
+	height: 4em;
+	width: 47.5%;
+	border-radius: 5px;
+	border: 2px solid #888;
+	margin: 10px 0;
+	padding-left: 20px;
+}
+.name {
+	margin-right: 5%;
+}
+.subject {
+	width: 100%;
+}
+.message {
+	padding: 20px 0 0 20px;
+	height: 8em;
+	width: 100%;
+	border-radius: 5px;
+}
+.btn {
+	height: 3.5em;
+	background-color: #436759;
+	color: #fff;
+	border-radius: 5px;
+	border: 2px solid #888;
+	width: 15em;
+	margin: 10px 0;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+footer {
+	color: #fff;
+	text-align: center;
+	padding :40px;
+}
+footer div ul li {
+	display: inline-block;
+	font-size: 25px;
+	padding:15px;
+
+}
