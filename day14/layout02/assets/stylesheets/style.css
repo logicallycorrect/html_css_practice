@@ -1,0 +1,421 @@
+/*   CSS Resets   */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*  General CSS  */
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+/*  Clearfix  */
+.cf:before, .cf:after {
+	content: '';
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+	clear: both;
+	*zoom: 1;
+}
+/*  Main CSS  */
+
+:root {
+font-size: 20px;
+font-family: 'Roboto', sans-serif;
+}
+/*custom grid*/
+/*custom grid*/
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+.col-25{
+width: 25%;
+display: inline-block;
+}
+.col-33{
+	width: 33.33%;
+	display: inline-block;
+	vertical-align: top;
+}
+.col-70{
+	width: 70%;
+	display: inline-block;
+}
+.padding{
+	padding: 3rem 0;
+}
+
+/*header*/
+/*header*/
+header{
+	width: 100%;
+	top: 0;
+	position: fixed;
+	text-transform: uppercase;
+	padding: 1rem 0;
+	background-color: #2D4154;
+	color: #D9F9E2;
+}
+.logo{
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-align: left;
+}
+.list{
+	text-align: right;
+}
+.list li{
+display: inline-block;
+padding-left: 1.5rem;
+font-weight: 500;
+}
+.list a{
+	color: #D9F9E2;
+	text-decoration: none;
+}
+
+.slider{
+	margin-top: 3.4rem;
+	background:linear-gradient(#2D4154, #02A581);
+	line-height: 3rem;
+}
+.logo-img img{
+	margin-bottom: 1rem;
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+}
+.nav-button{
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	visibility: hidden;
+}
+.align{
+	visibility: hidden;
+}
+#toggle{
+	display: none;
+}
+h1{
+	font-size: 2.5rem;
+	color: #D9F9E2;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+h2{
+	font-size: 2rem;
+	color: #2D4154;
+	letter-spacing: .2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.slider p{
+	color: #D9F9E2;
+	font-size: .9rem;
+}
+.portfolio li{
+	display: inline-block;
+	width: 31%;
+	margin-top: 3.5%;
+	margin-right: 3.5%;
+}
+.portfolio .no-margin{
+	margin-right: 0;
+}
+.portfolio img{
+	width: 100%;
+}
+
+.about{
+	background:linear-gradient(#284B58, #02A581);
+}
+
+.col-50{
+	display: inline-block;
+	width: 50%;
+	text-align: left;
+	padding-left: .5rem;
+	color: #D9F9E2;
+	padding-bottom: 2rem;
+}
+.wrapper-60{
+	width: 60%;
+	text-align: center;
+	margin: 0 auto;
+}
+.wrapper-60 h2{
+color:#D9F9E2;
+margin-bottom: 2rem;
+}
+.btn{
+padding: .5rem 1.5rem;
+border:2px solid #000;
+border-radius: 5px;
+}
+.form{
+	text-align: left;
+}
+.form h2{
+	color: #000;
+	text-align: center;
+}
+
+.form .input{
+	width: 100%;
+	padding: 1rem;
+	border: none transparent;
+	border-bottom: 2px solid #888;
+	 outline: none;
+}
+.form-btn{
+	background-color: #02A581;
+	margin-top: 2.5rem;
+	color: #fff;
+	font-weight:900;
+}
+.btn:hover{
+cursor: pointer;
+color: blue;
+background-color: #11211d;
+}
+
+.map{
+	background-color: #BCC7D3;
+}
+.main-map{
+	width: 100%;
+	margin: 2.5rem 0;
+	height: 20rem;
+}
+
+.table{
+	margin: 2.5rem 1rem;
+	
+}
+
+.main-table{
+	width: 100%;
+}
+.main-table tr{
+	height: 2.5rem;
+	line-height: 2.5rem;
+	text-align: left;
+}
+.main-table td,th{
+	padding-left: 1rem;
+}
+.main-table th{
+	color:blue;
+}
+
+.main-table .heading{
+background-color: #242B3E;
+} 
+
+.light-grey{
+	background-color: #363F54;
+}
+.dark-grey{
+	background-color: #30374A;
+}
+.main-table .first{
+	color: red;
+}
+.footer1{
+	background-color: #30374A;
+}
+
+.footer1 li{
+	width: 15%;
+	display: inline-block;
+	margin: 5px;
+}
+.footer1 p{
+color: #D9F9E2;
+}
+.footer2{
+	background-color: #192A34;
+	color:#D9F9E2;
+	line-height: 2.5rem;
+	height: 2.5rem;
+	text-transform: capitalize;
+}
+.footer1 h3{
+	font-weight: 500;
+	color: #D9F9E2;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	padding-bottom: 2rem;
+}
+.footer1 a{
+	text-decoration: none;
+	color:#D9F9E2;
+}
+.footer1 strong{
+	color: #1FE9FF;
+}
+.relative {
+	position: relative;
+}
+.circle{
+	display: inline-block;
+	height: 2rem;
+	width: 2rem;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+textarea {resize: none}
+
+.col-33 li a:hover{
+cursor: pointer;
+color: blue;
+}
+.col-33 .circle:hover{
+cursor: pointer;
+border: 2px solid blue;
+}
+.hamburger-btn a:hover{
+	color: blue;
+}
+
+
+@media all and (max-width: 600px) {
+:root{
+	font-size: 15px;
+}
+
+.portfolio li{
+	padding-top: 2rem;
+}
+.wrapper{
+	width: 100%;
+}
+.portfolio{
+	text-align: center;
+}
+
+.portfolio .no-margin{
+	margin: 0 auto;
+}
+
+.portfolio li{
+margin: 0 auto;
+	width: 60%;
+	display: block;
+}
+.about{
+	text-align: center;
+}
+.col-50, .col-33, .logo, .col-25, .col-70{
+	margin: 0 auto;
+	display: block;
+}
+.col-50 {
+	width: 100%;
+}
+
+.list li{
+	display: block;
+}
+.main-map{
+	width: 90%;
+}
+
+#toggle ~ .col-70{
+	display: none;
+}
+
+#toggle:checked ~ .col-70 {
+	display: block;
+
+}
+.nav-button{
+visibility: visible;
+}
+.list{
+	text-align: center;
+}
+.hamburger-btn{
+	background-color: rgba(0,0,0,.5);
+	width: 100vw;
+	 position: absolute;
+    top: 100%;
+ left: 0;
+    z-index: 2;
+}
+.hamburger-btn li{
+padding: 1rem 0;
+}
+.align{
+	visibility: visible;
+	position: absolute;
+	top: 110%;
+	right: 5%;
+	z-index: 3;
+}
+
+
+}
+
+

@@ -1,0 +1,180 @@
+/*   CSS Resets   */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*  General CSS  */
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+/*  Clearfix  */
+.cf:before, .cf:after {
+	content: '';
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+	clear: both;
+	*zoom: 1;
+}
+/*  Main CSS  */
+.wrapper {
+	width: 80%;
+	margin:0 auto 30px auto;
+}
+.logo {
+	width: 15%;
+}
+.logo img {
+	width: 100%;
+	height: 10vh;
+}
+.image1 {
+	width: 100%;
+	height: 70vh;
+}
+nav {
+text-transform: uppercase;
+}
+.navigation {
+	margin-top: 40px;
+	color: #000;
+}
+.navigation li {
+	padding-left: 20px;
+	font-weight: 500;
+	display: inline-block;
+	font-size:100%;
+}
+.navigation li a {
+	color: #000;
+}
+.col-70 {
+	width: 70%;
+	padding-right: 30px;
+}
+.col-30 {
+	width: 30%;
+}
+.section2 {
+	padding-top: 30px;
+}
+.col-30 h2 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #000;
+	padding-bottom: 20px;
+}
+p {
+	color: #999;
+}
+.col-30 p {
+	font-style: italic;
+}
+.col-70 h1 {
+	font-size: 22px;
+	color: #000;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.hidden {
+	text-align: center;
+	display: none;
+	padding: 5px;
+	background-color: #19FFD1;
+}
+.hidden a{
+color: #000;
+}
+/*medi query*/
+@media all and (max-width: 600px) {
+.hidden {
+	display: block;
+}
+.wrapper {
+	width: 100%;
+	padding: 10px;
+}
+.logo {
+	float: none;
+	margin: 5px 0;
+}
+.navigation {
+	float: none;
+	text-align: center;
+	margin-top: 0px;
+}
+.navigation li {
+	display: block;
+	font-weight: 500;
+	background-color: #E0DE9F;
+	font-size:100%;
+	padding: 2px;
+	margin-bottom: 3px;
+}
+.col-70 {
+	float: none;
+	width: 100%;
+}
+.col-30 {
+	margin-top: 5px;
+	float: none;
+	width: 100%;
+}
+}
