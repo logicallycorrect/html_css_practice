@@ -1,0 +1,222 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #3A4A4F;
+	font-size: 20px;
+}
+
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*HEADER*/
+
+header h1{
+	text-align: center;
+	color: white;
+	font-size: 2.5rem;
+	font-family: "Kodchasan";
+	font-weight: 700;
+}
+
+.navbar{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	border-radius: 5px;
+	margin: 1rem 0;
+}
+.nav{
+	text-decoration: none;
+	color: #0095BE;
+	text-align: center;
+	padding: 0.5rem 0;
+}
+.border{
+	border-top: 2px solid #0095BE;
+	background-color: white;
+
+}
+
+.red{
+	color: red;
+}
+
+.container2{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	grid-template-areas: 
+	"left1 middle right1"
+	"left2 middle right2"
+	"left2 middle right3"
+}
+h2{
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+h2,p{
+	padding: 0.5rem 1rem;
+}
+a{
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+display: block;
+
+}
+.middle-image { 
+	margin: 10px auto;
+	height: 18rem;
+	width: 18rem;
+	border-radius: 50%;
+}
+
+.img-container{
+	display: grid;
+	place-items: center;
+}
+
+.graph{
+	margin: 10px auto;
+	height: 9rem;
+	width: 9rem;
+}
+
+.left1{
+	grid-area: left1;
+}
+
+.left2{
+	grid-row: span 2;
+	grid-area: left2;
+}
+
+.middle{
+	grid-row: span 3;
+	grid-area: middle;
+}
+
+.right1{
+	grid-area: right1;
+}
+
+.right1 .white{
+	background-color: red;
+	color: white;
+}
+
+.right2{
+	grid-area: right2;
+}
+.right2 h2{
+	color: white;
+	background-color: #0095BE;
+} 
+
+.right3{
+	grid-area: right3;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 700px){
+	.body{
+		font-size: 15px;
+	}
+	.container{
+		width: 95%;
+		margin: 0 auto;
+	}
+	.container2{
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"left1 right1"
+		"left2 right2"
+		"left2 right3"
+		"middle none"
+	}
+}
+
+@media screen and (max-width: 400px){
+	.body{
+		font-size: 10px;
+	}
+
+	.container{
+		max-width: 100%;
+		width: 95%;
+		margin: 0 auto;
+	}
+	.nav{
+		font-size: 10px;
+	}
+	.border{
+		width: 100%;
+	}
+	.container2{
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"left1"
+		"left2"
+		"middle"
+		"right1"
+		"right2"
+		"right3"
+	}
+}
+
